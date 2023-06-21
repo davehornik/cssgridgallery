@@ -1,0 +1,69 @@
+body {
+  background-color: rgb(34, 34, 34);
+  color: rgb(235, 235, 235);
+  font-family: "Ubuntu", sans-serif;
+}
+
+.welcome {
+  text-align: center;
+}
+
+hr {
+  margin: 20px auto;
+  color: #00ff73;
+  border: 2px solid #00ff73;
+  max-width: 20rem;
+}
+
+.buffer {
+  margin-top: 3rem;
+}
+
+.gallery {
+  margin-left: 5%;
+  margin-right: 5%;
+  max-width: 90%;
+  align-self: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-template-rows: 3fr (minmax(300px, 1fr));
+  gap: 1rem; 
+  justify-items:center;
+}
+
+.image {
+  max-width: 100%;
+  max-height: 100%;
+  align-self:center;
+  border: 1px solid #00000000;
+  border-radius: 20px;
+  transition:all 0.2s ease-out;
+
+}
+.image:hover {
+  box-shadow: 7px 7px 3px 2px #0000002d;
+  border: 1px solid #00ff73;
+  border-radius: 5px;
+  transition:all 0.2s ease-out;
+  scale: 110%;
+  rotate: 1deg;
+}
+
+.image::backdrop {
+  background-color: rgba(0, 0, 0, 0.308);
+}
+
+.gh {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(255, 123, 0);
+  transition: all 0.2s linear;
+}
+
+.gh:hover {
+  color: aqua;
+  text-shadow: 1px 1px #ffffff2d;
+  transition: all 0.2s ease-in;
+}
