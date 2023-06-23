@@ -7,7 +7,7 @@ body {
 }
 
 .header {
-  background: rgb(34, 34, 34);
+  background: rgb(34, 34, 34); 
   z-index: 100;
 }
 
@@ -46,9 +46,9 @@ hr {
 }
 
 .gallery {
-  margin-left: 15%;
-  margin-right: 15%;
-  max-width: 70%;
+  margin-left: 20%;
+  margin-right: 20%;
+  max-width: 60%;
   align-self: center;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -72,15 +72,6 @@ hr {
   scale: 108%;
   rotate: 1deg;
   z-index: 99;
-}
-
-.image:hover::after{
-  content: "\1F50D"; 
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 10em;
 }
 
 .gallery img:hover:nth-child(even) {
